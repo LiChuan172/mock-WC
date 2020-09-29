@@ -15,6 +15,7 @@
     "working",
     "condition"
   ],
+  "type": "module",
   "author": "LI Chuan",
   "license": "ISC",
   "bugs": {
