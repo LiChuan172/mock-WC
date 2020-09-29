@@ -1,0 +1,24 @@
+{
+  "name": "mock-wc",
+  "version": "1.0.0",
+  "description": "mock working condition",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiChuan172/mock-WC.git"
+  },
+  "keywords": [
+    "mock",
+    "working",
+    "condition"
+  ],
+  "author": "LI Chuan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LiChuan172/mock-WC/issues"
+  },
+  "homepage": "https://github.com/LiChuan172/mock-WC#readme"
+}
