@@ -47,7 +47,7 @@ const config = {
   c_rmsa_2: {
     // 有效值2
     base: 0.1,
-    amplitude: 0.1,v
+    amplitude: 0.1,
   },
   c_rmsv: {
     // 速度有效值
