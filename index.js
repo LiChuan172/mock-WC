@@ -29,10 +29,60 @@ const config = {
     base: 30,
     amplitude: 5,
   },
+  c_p: {
+    // 峰值
+    base: 0.2,
+    amplitude: 0.1,
+  },
+  c_pp: {
+    // 峰峰值
+    base: 0.3,
+    amplitude: 0.1,
+  },
+  c_rmsa: {
+    // 有效值
+    base: 0.1,
+    amplitude: 0.1,
+  },
+  c_rmsa_2: {
+    // 有效值2
+    base: 0.1,
+    amplitude: 0.1,v
+  },
+  c_rmsv: {
+    // 速度有效值
+    base: 0.1,
+    amplitude: 0.1,
+  },
+  c_k: {
+    // 峭度
+    base: 0.5,
+    amplitude: 0.1,
+  },
+  c_dl: {
+    // 倾斜方向
+    base: 0.8,
+    amplitude: 0.2,
+  },
+  c_al: {
+    // 倾斜角度
+    base: 0.8,
+    amplitude: 0.2,
+  },
+  c_plb: {
+    // 螺栓预紧力
+    base: 1000,
+    amplitude: 300,
+  },
+  c_nf: {
+    // 固有频率提取
+    base: 500,
+    amplitude: 80,
+  },
   default: {
     base: 10,
     amplitude: 5,
-  },
+  }
 }
 
 export const getMockWC = (shortName) => {
