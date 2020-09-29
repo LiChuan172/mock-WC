@@ -19,6 +19,11 @@ const config = {
     base: 40,
     amplitude: 3,
   },
+  wc_rev: {
+    // 发电机转速
+    base: 1700,
+    amplitude: 100,
+  },
   wc_p: {
     // 发电机功率
     base: 30,
@@ -34,6 +39,11 @@ export const getMockWC = (shortName) => {
   const { base, amplitude } = config[shortName]
     ? config[shortName]
     : config.default
-  
-  return base + amplitude * Math.random()
+
+  return (
+    base +
+    (Math.random() < 0.5 ? -1 : 1) *
+      amplitude *
+      Math.random()
+  )
 }

@@ -1,6 +1,6 @@
 {
   "name": "mock-wc",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "mock working condition",
   "main": "index.js",
   "scripts": {
