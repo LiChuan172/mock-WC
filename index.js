@@ -82,7 +82,7 @@ const config = {
   default: {
     base: 10,
     amplitude: 5,
-  }
+  },
 }
 
 export const getMockWC = (shortName) => {
@@ -97,3 +97,13 @@ export const getMockWC = (shortName) => {
       Math.random()
   )
 }
+
+function threshold(shortName, c) {
+  const { base, amplitude } = config[shortName]
+    ? config[shortName]
+    : config.default
+  return base + amplitude * c
+}
+
+export const threshold_I = (shortName) => threshold(shortName, 0.6)
+export const threshold_II = (shortName) => threshold(shortName, 0.8)
